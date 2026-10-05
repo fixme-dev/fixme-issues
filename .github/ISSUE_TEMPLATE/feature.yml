@@ -1,0 +1,24 @@
+name: Feature request
+description: Something you'd like FIXME to do.
+labels: [enhancement]
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: What you're trying to do
+      description: The problem first, then any idea for how FIXME could help.
+    validations:
+      required: true
+  - type: dropdown
+    id: area
+    attributes:
+      label: Area
+      multiple: true
+      options:
+        - Mac app
+        - iOS helper
+        - Android helper
+        - React Native helper
+        - Flutter helper
+        - AI agents (MCP tools)
+        - Website or docs

@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Purchase, license or anything private
+    url: mailto:general@getfixme.dev
+    about: Orders, license keys, refunds, or a Doctor diagnostics report (it holds your folder paths and phone names).
+  - name: Security problem
+    url: https://github.com/fixme-dev/fixme-issues/security/advisories/new
+    about: Report it privately, never in a public issue.

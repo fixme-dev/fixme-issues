@@ -1,0 +1,77 @@
+name: Bug report
+description: Something in FIXME or a phone helper didn't work.
+labels: [bug]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for taking the time. This issue is public, so please leave out folder paths, phone names, license keys, email addresses and screenshots of unreleased apps. Doctor's Copy diagnostics report contains paths and phone names: send it to general@getfixme.dev instead.
+  - type: textarea
+    id: what
+    attributes:
+      label: What happened
+      description: What you did, and what FIXME did.
+      placeholder: I circled a button on my iPhone and the overlay closed without sending.
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: What you expected
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      placeholder: |
+        1. Open the app on the phone
+        2. Circle the price
+        3. Press Send
+  - type: dropdown
+    id: where
+    attributes:
+      label: Where
+      multiple: true
+      options:
+        - Mac app
+        - iPhone or iPad
+        - iOS Simulator
+        - Android phone
+        - Android emulator
+        - Clip Review or Tickets
+        - An AI agent (MCP tools)
+    validations:
+      required: true
+  - type: dropdown
+    id: framework
+    attributes:
+      label: App framework
+      options:
+        - SwiftUI or UIKit
+        - Jetpack Compose or Android Views
+        - React Native
+        - Expo
+        - Flutter
+        - Not about a phone app
+    validations:
+      required: true
+  - type: input
+    id: version
+    attributes:
+      label: FIXME version
+      description: FIXME menu, About FIXME.
+      placeholder: "0.9.0"
+    validations:
+      required: true
+  - type: input
+    id: os
+    attributes:
+      label: macOS and phone OS versions
+      placeholder: macOS 27.0, iOS 27.0
+  - type: textarea
+    id: summary
+    attributes:
+      label: Report from the app
+      description: Help > Report a Bug fills this in. It has versions and check results only, no paths or names.
+      render: text
